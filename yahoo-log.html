@@ -29,11 +29,7 @@
                 var isGoodJS = ('create' in Object && 'isArray' in Array && 'pushState' in window.history);
                 root.isGoodJS = isGoodJS;
             }(this));
-            
-            
-            YUI_config.global = window;
-
-
+                
             window.mbrSendError = function (name, url) {
                 (new Image()).src = '/account/js-reporting/?rid=03ka14th2dfrl&crumb=' + encodeURIComponent('zCYCzNQWZ6D') + '&message=' + encodeURIComponent(name) + '&url=' + encodeURIComponent(url);
             };
